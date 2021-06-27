@@ -3,7 +3,7 @@ pragma solidity ^0.8.4;
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 contract TimeLock {
-    uint256 public constant duration = 365 days;
+    uint256 public constant duration = 31 days;
     uint256 public immutable end;
     address payable public immutable owner;
 
