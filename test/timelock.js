@@ -14,7 +14,7 @@ contract("Timelock", async (accounts) => {
   it("Should lock and unlock token & ether", async () => {
     let contractEtherBalance, contractTokenBalance, ownerTokenBalance;
     const etherAmount = web3.utils.toWei("1");
-    const tokenAmount = web3.utils.toWei("1");
+    const tokenAmount = web3.utils.toWei("100");
 
     await web3.eth.sendTransaction({
       from: owner,
